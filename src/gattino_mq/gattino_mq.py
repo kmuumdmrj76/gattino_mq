@@ -36,7 +36,6 @@ class Gattino_MQ(ExtBase):
         self.mq_key = conf_dic["mq_key"]
         self.interval = float(
             conf_dic["interval"]) if "interval" in conf_dic else 0
-        print(self.interval)
         return conf_dic
 
     def send_hb(self):
